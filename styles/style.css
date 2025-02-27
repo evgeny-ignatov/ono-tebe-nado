@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  padding: 92px 50px 96px;
+  padding: 92px 50px;
 }
 
 .header__menu {
@@ -50,3 +50,71 @@
   padding-bottom: 5px;
 }
 
+.cover {
+  position: relative;
+  z-index: -1;
+  padding: 165px 50px 50px;
+  background: url(../images/cover.jpg) no-repeat center / cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgb(0 0 0 / 0.6);
+}
+
+.cover__title {
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.15;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.aligned-text {
+  display: block;
+  padding-bottom: 20px;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 86px;
+}
+
+.cover__description-text {
+  font-size: 22px;
+  line-height: 1.27;
+  word-spacing: 0.84em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.bet-button {
+  padding: 12px 32px 11px 31px;
+  background: transparent;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #fff;
+}
