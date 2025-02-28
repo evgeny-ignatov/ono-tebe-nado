@@ -23,13 +23,12 @@
   list-style: none;
 }
 
-.header__link {
+.menu-link {
   text-underline-offset: 0.2em;
-  font-weight: 400;
   font-size: 18px;
 }
 
-.header__link_active {
+.menu-link_active {
   text-decoration: none;
 }
 
@@ -226,4 +225,35 @@
   grid-column: 2 / -1;
   font-size: 20px;
   line-height: 1.2;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 50px 82px;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__menu-list-item {
+  list-style: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: end;
+  gap: 48px;
+}
+
+.footer__social-list-item {
+  max-width: 48px;
+  list-style: none;
+}
+
+.footer__social-link {
+  width: 100%;
 }
